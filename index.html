@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       property="og:image"
       content="https://top-shows.netlify.app/rock.gif"
@@ -13,13 +13,24 @@
       property="og:video:url"
       content="https://top-shows.netlify.app/rick.mp4"
     />
-    <meta property="og:video:width" content="176" />
-    <meta property="og:video:height" content="144" />
-
+    <meta property="og:video:width" content="240" />
+    <meta property="og:video:height" content="184" />
     <title>
       Top Shows - Netflix, Prime, AppleTv, Disney, Youtube | List Is Updating
     </title>
     <link rel="shortcut icon" type="image/jpg" href="./favicon.jpg" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2LXK28JZHB"
+    ></script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "G-2LXK28JZHB");
+    </script>
   </head>
   <body>
     <div
@@ -27,7 +38,7 @@
       style="
         position: fixed;
         left: 50%;
-        top: 25%;
+        top: 45%;
         transform: translate(-50%, -50%);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
           sans-serif;
@@ -37,11 +48,15 @@
     >
       <h1>Sowwy :/</h1>
       <br />
-      <h3>You just got rick-rolled</h3>
+      <video controls="false" autoplay muted width="380px">
+        <source src="rick.mp4" type="video/mp4" />
 
+        Your browser does not support the video tag.
+      </video>
+      <h3>You just got rick-rolled</h3>
       <a
         href="https://github.com/Daim-Nickel-Penny/rick-roll-url"
-        style="color: blue"
+        style="color: #00f"
         >Github Repo</a
       >
     </div>
