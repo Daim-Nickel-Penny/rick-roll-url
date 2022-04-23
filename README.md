@@ -20,7 +20,7 @@
 
 
 Who in the world is not tired of getting **rickrolled** now and then on the internet.
-The worst part is that you can't take rickroll them back because it gets super predictable. 
+The worst part is that you can't rickroll them back because it gets super predictable. 
 
 
 
@@ -29,7 +29,7 @@ The worst part is that you can't take rickroll them back because it gets super p
 ## Usage
 
 Simply copy the link, https://top-shows.netlify.app/ and share it with anyone you want. 
-The best part is that it shows a different embeded image and the video is of "rick roll" :-)
+The best part is that it shows a different embeded image and if they play the video they get rick-rolled Sheesh!  :-)
 
 *P.S. It works the best in discord*
 ![Demo](https://github.com/Daim-Nickel-Penny/rick-roll-url/blob/main/demo.PNG?raw=true)
