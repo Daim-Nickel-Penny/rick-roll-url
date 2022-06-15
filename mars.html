@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/mars.css" />
-    <title>Believer?</title>
+    <link rel="stylesheet" href="./Styles/mars.min.css" />
+    <title>Premium Content | Giveaways | Much More</title>
     <link rel="icon" href="./assets/party-parrot.gif" type="image/gif" />
+    <meta
+      name="description"
+      content="Find the all the premium content 🤑. From the best of the best to the best of the best. Check out our list of giveaways.  "
+    />
+    <meta name="keyword" content="premium, content, fun, meme, congo" />
   </head>
   <body>
     <div id="modal" class="modal">
@@ -661,11 +666,12 @@
         document.getElementById("button").onclick = function () {
           document.getElementById("modal").style.display = "none";
           document.getElementById("closeModal").style.display = "block";
-          //   snd.play();
+          snd.play();
+          document.title = "SIKE!!";
         };
       };
 
-      //   var snd = new Audio("./assets/conga.mp3");
+      var snd = new Audio("./assets/conga.mp3");
     </script>
   </body>
 </html>
