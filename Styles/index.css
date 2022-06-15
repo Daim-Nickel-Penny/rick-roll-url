@@ -1,0 +1,174 @@
+html,
+body {
+  background-color: #6640ff;
+  color: #ede1ff;
+  font-family: "Open Sans", Arial;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6640ff orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6640ff;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+
+.mainContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+}
+* {
+  box-sizing: border-box;
+}
+a,
+u {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+.marquee {
+  font-size: clamp(4rem, 4.5vw, 9rem);
+  font-weight: 900;
+  line-height: 1.25;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+}
+.marquee__text {
+  overflow: hidden;
+  pointer-events: none;
+}
+.marquee__line {
+  display: flex;
+  position: relative;
+}
+.marquee__line:nth-child(2) {
+  justify-content: flex-end;
+  z-index: 1;
+}
+.marquee__sentence {
+  padding-right: 30px;
+  white-space: nowrap;
+}
+.marquee__image {
+  height: 120%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -10%;
+}
+
+/*media query for smal screen*/
+
+@media screen and (max-width: 600px) {
+  .marquee {
+    width: 130%;
+  }
+  #marquee-first-line {
+    margin-top: -10%;
+    z-index: 1;
+  }
+  .marquee__text {
+    overflow: visible;
+  }
+  .marquee__image {
+    left: 0%;
+  }
+}
+
+/*Button*/
+/* CSS */
+
+.nav {
+  /* background-color: #ede1ff; */
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+#nsfw {
+  background-color: #ff0000;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.5%;
+  border-radius: 4px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 #ff5733;
+  }
+  50% {
+    box-shadow: 0 0 30px 0 #ff5733;
+  }
+}
+.btn-glow {
+  box-shadow: 0 0 0 0 #ff5733;
+  animation: glow 1.4s ease-out infinite;
+}
